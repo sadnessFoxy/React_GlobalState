@@ -1,15 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import componentA from './component/componentA'
-import componentB from './component/componentB'
+import ComponentA from './component/componentA'
+import ComponentB from './component/componentB'
+import ToggleTheme from './component/ToggleTheme'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <componentA />
-      <componentB />
+      {/* <ComponentA />
+      <ComponentB /> */}
+
+      <ToggleTheme/>
     </>
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-import { useRecoilState } from 'recoil'
-import { couterAtom } from '../recoil/recoilCounter'
+import { useRecoilState, useRecoilValue } from 'recoil'
+import { recoilCounter } from '../recoil/recoilCounter'
 
-function componentA() {
-    const count = counterAtom
+function ComponentA() {
+    const count = useRecoilValue(recoilCounter)
   return (
     <div> Component A: Counter value: {count} </div>
   )
 }
 
-export default componentA
+export default ComponentA
